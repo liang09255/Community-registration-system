@@ -1,0 +1,31 @@
+.myButton{
+    color: white;
+    background-color: #00b6ff;
+    border: 0;
+}
+
+.myButton:hover{
+    color: white;
+    background-color: #409eff;
+}
+
+.myButton:focus{
+    color: white;
+    background-color: #00b6ff;
+}
+
+.disabledBtn{
+    color: white ! important;
+    background-color: #888888 ! important;
+}
+
+.disabledBtn:hover{
+    color: white;
+    background-color: #888888;
+}
+
+.disabledBtn:focus{
+    color: white;
+    background-color: #888888;
+}
+

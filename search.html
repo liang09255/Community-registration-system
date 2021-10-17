@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GDPU融媒体中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="woff2/woff2.css" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/toastr.min.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 text-left">
+						<div id="fh5co-logo"><a href="index.html">GDPU<span>.</span></a></div>
+					</div>
+					<div class="col-xs-8 text-right menu-1">
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="technology.html">技术组</a></li>
+							<li><a href="design.html">设计组</a></li>
+							<li><a href="activity.html">活动</a></li>
+							<li><a href="signUp.html">报名表</a></li>
+							<li class="active"><a href="search.html">查询</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<!--头部开始-->
+
+		<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container" >
+				<div class="row">
+					<div class="col-md-7 text-left">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+								<h1 class="mb30">报名查询系统</h1>
+								<h2 class="mb30" style="font-size: 15px; margin-top: -20px; color: rgb(200,200,200)">Registration inquiry system</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--头部结束-->
+
+	
+
+	<div id="fh5co-blog" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+				<div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
+					<span>Search</span>
+					<h2 style="font-size: 40px">输入手机号查询报名信息</h2>
+					<p>Enter the mobile phone number to query the registration information</p>
+				</div>
+			</div>
+
+			<p>温馨提示：如需修改信息请至报名表页面重新填写提交</p>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="fh5co-post">
+						<span class="fh5co-date">2021</span>
+						<h3><a>电话</a></h3>
+						<p style="height: 150px">
+							<input type="text" id="sMyPhone" class="form-control" placeholder="Phone number">
+							<input type="button" onclick="searchPhone()" value="提交" class="btn btn btn-primary" style="margin-top: 20px; background-color: #00b6ff; border: none">
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="fh5co-post">
+						<span class="fh5co-date">2021</span>
+						<h3><a>姓名</a></h3>
+						<p style="height: 150px" id="MyName">未查询到信息</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="fh5co-post">
+						<span class="fh5co-date">2021</span>
+						<h3><a>邮箱</a></h3>
+						<p style="height: 150px" id="MyEmail">未查询到信息</p>
+					</div>
+				</div>
+
+				<div class="clearfix visible-md-block"></div>
+
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="fh5co-post">
+						<span class="fh5co-date">2021</span>
+						<h3><a>意向部门</a></h3>
+						<p style="height: 150px" id="MyPart">未查询到信息</p>
+					</div>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="fh5co-post">
+						<span class="fh5co-date">2021</span>
+						<h3><a>自我介绍</a></h3>
+						<p style="height: 150px" id="MyAbout">未查询到信息</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="fh5co-post">
+						<span class="fh5co-date">2021</span>
+						<h3><a>报名状态</a></h3>
+						<p style="height: 50px; margin: 0" id="MyStatus">未查询到信息</p>
+						<hr style="margin: 20px">
+						<P style="height: 59px">温馨提示：后续面试信息将会通过短信或邮件通知，也可通过网站自助查询</P>
+					</div>
+				</div>
+				
+				<div class="clearfix visible-md-block"></div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+		<footer id="fh5co-footer" role="contentinfo" style="padding-top: 30px; padding-bottom: 10px">
+			<div class="container">
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small>Copyright &copy; GDPU LLandry 2021</small>
+							<small class="block">
+								备案号：
+								<a href="https://beian.miit.gov.cn/" target="_blank" style="color: #4791ff">粤ICP备2021090157号-2</a>
+							</small>
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery/jquery.waypoints.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+<!--	自己的js-->
+	<script src="js/personal/searchPhone.js"></script>
+
+<!--	toastr通知-->
+	<script src="js/toastr/toastr.min.js"></script>
+	<script src="js/toastr/toastrConfig.js"></script>
+
+	</body>
+</html>
+
